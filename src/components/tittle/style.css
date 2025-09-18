@@ -1,0 +1,63 @@
+.tittle {
+  margin-top: 7px;
+  background: black;
+  color: rgb(20, 65, 225);
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Spread items across the container */
+  padding: 0 10px; /* Optional: Add some padding for better spacing */
+  height: 5vh;
+  transition: .5s;
+}
+
+.tittle h1 {
+  margin: 0; /* Remove default margin */
+  text-align: center;
+  flex: 1; /* Make it take up the remaining space */
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+}
+.light-tittle-h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1px 7px;
+ 
+  border-radius: 5px;
+  color: #1100ff;
+  border: 1px solid #1100ff;
+  position: absolute;
+}
+.light-tittle-h4:hover{
+  color: #039619;
+  border: 1px solid #039619;
+  transition: .2s ;
+
+}
+
+.dark-tittle-h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  padding: 1px 7px;
+  
+  border-radius: 5px;
+
+  color: #ffffff;
+  border: 1px solid #fff;
+   position: absolute;
+}
+.dark-tittle-h4:hover{
+  color: #5be12c;
+  border: 1px solid #44ff00;
+  transition: .2s ;
+}
+
+@media (min-height: 770px) {
+  .tittle {
+      height: 5vh;
+  }
+}

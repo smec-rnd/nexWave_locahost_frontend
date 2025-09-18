@@ -1,0 +1,86 @@
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    border-radius: 5px;
+     transition: .5s;
+   }
+   
+   .Header .smeclogo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     
+   }
+   
+   .Header .smeclogo-div  img{
+    width: 40%;
+    height: 100%;
+   }
+   .Header .smeclogo-div p{
+       color: #fff;
+       font-size: medium;
+   }
+   .controler-tool{
+     display: flex;
+     justify-content: end;
+     align-items: center;
+     gap: 10px;
+     width: 50%;
+     margin-right: 25px;
+   }
+    .icon-border{
+       border:.3px  rgb(98 98 98) solid;
+       height:30px;
+       width:30px;
+       border-radius:5px;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       cursor: pointer;
+   }
+   .controler-tool .icons{
+       color:#fff;
+       cursor: pointer;
+   }
+   .controler-tool .select{
+       background-color: #F5FFFA;
+       height: 30px;
+   }
+   
+   .refresh-checkbox{
+     display: none;
+   }
+   
+   .refresh-label{
+     cursor: pointer;
+     display: inline-block;
+   }
+   
+   .refresh-icon {
+     transition: transform 1s ease-in;
+   }
+   
+   .refresh-checkbox:checked + .refresh-label .refresh-icon {
+     animation: spin 2s linear;
+   }
+   
+   @keyframes spin {
+     0% {
+       transform: rotate(0deg);
+     }
+     50% {
+       transform: rotate(360deg);
+     }
+     100% {
+       transform: rotate(720deg);
+     }
+   }
+   @media (min-height: 770px) {
+    .Header{
+      height: 7vh;
+    }
+  }

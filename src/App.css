@@ -1,0 +1,52 @@
+/* General styles */
+.App {
+  background: #121212;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.5s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Default state for the unsupported message */
+.no-support-message {
+  display: none; /* Hidden by default */
+}
+
+/* Hide content on small screens */
+@media screen and (max-width: 768px) {
+  .App {
+    display: none; /* Hide the main content */
+  }
+  .no-support-message {
+    display: block; /* Show message for unsupported devices */
+    color: #fff;
+    background: #121212;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .no-support-message {
+    width: 100vw;
+    height: 100vh;
+    display: block; /* Hidden by default */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
+

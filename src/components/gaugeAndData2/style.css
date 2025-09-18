@@ -1,0 +1,24 @@
+
+
+.GuageAndData2{
+    display: grid;
+    grid-template-columns: 20%  29.3%   49.8%;
+    margin-top: 7px;
+    grid-gap: 7px;
+    transition: .5s;
+ 
+}
+.GuageAndData2-child{
+    background: black;
+    
+   
+}
+.canvasjs-chart-credit{
+    display: none;
+}
+
+@media (min-height: 770px) {
+    .GuageAndData2{
+      height: 28.5vh;
+    }
+  }

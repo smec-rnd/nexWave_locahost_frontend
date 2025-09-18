@@ -1,0 +1,45 @@
+.graphAndFunctions{
+    margin-top: 10px;
+   
+    height: 83.5vh;
+    border-radius: 7px;
+     display: flex;
+    overflow: hidden;
+    gap: 7px;
+}    
+.graphAndFunctions .Graph{
+    width: 90vw;
+    height: 100%;
+    background: rgb(0, 0, 0);
+     padding: 0;
+     border-radius: 7px;
+
+}
+.graph-customization {
+    border-radius: 5px;
+   background: rgb(0, 0, 0);
+   height:min-content;
+   width: 10%;
+   color: white;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.graph-customization div{
+    padding: 5%;
+    text-align: cnter;
+}
+.center-alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+   
+  }
+.switches{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

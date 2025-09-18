@@ -1,0 +1,46 @@
+.GuageAndData3{
+    display: flex;
+   
+    margin-top: 7px;
+    grid-gap: 7px;
+    height: 28.5%;
+  
+    transition: .5s;
+
+}
+.GuageAndData3-child{
+
+    
+    background: black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-family:'Times New Roman', Times, serif ;
+}
+.GuageAndData3-child P{
+    margin-top: 5px;
+}
+@media (min-height: 770px) {
+    .GuageAndData3{
+      height: 28.5vh;
+    }
+  }
+  .GuageAndData3.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .GuageAndData3-child.fullscreen-chart {
+    width: 100%;
+    height: 100%;
+  }
+  
